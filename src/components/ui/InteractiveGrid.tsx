@@ -106,7 +106,7 @@ export default function InteractiveGrid({
               className="bg-grid absolute inset-0"
               style={{
                 backgroundImage:
-                  "linear-gradient(rgba(110,231,183,0.35) 1px, transparent 1px), linear-gradient(90deg, rgba(110,231,183,0.35) 1px, transparent 1px)",
+                  "linear-gradient(rgba(94,241,99,0.35) 1px, transparent 1px), linear-gradient(90deg, rgba(94,241,99,0.35) 1px, transparent 1px)",
               }}
             />
           </div>
@@ -115,7 +115,7 @@ export default function InteractiveGrid({
             className="absolute inset-0 opacity-0 transition-opacity duration-500"
             style={{
               background:
-                "radial-gradient(240px circle at var(--mx, 50%) var(--my, 35%), rgba(16,185,129,0.12), transparent 70%)",
+                "radial-gradient(240px circle at var(--mx, 50%) var(--my, 35%), rgba(12,211,37,0.14), transparent 70%)",
             }}
           />
         </>

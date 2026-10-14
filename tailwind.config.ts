@@ -5,16 +5,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Verde de los pastos y colinas de Tandil + neutros cálidos
+        // Verde neón de marca (#0cd325) + neutros cálidos
         brand: {
-          50: "#ecfdf5",
-          100: "#d1fae5",
-          200: "#a7f3d0",
-          300: "#6ee7b7",
-          400: "#34d399",
-          500: "#10b981",
-          600: "#059669",
-          700: "#047857",
+          50: "#e9fdeb",
+          100: "#ccf9ce",
+          200: "#97f49a",
+          300: "#5ef163",
+          400: "#2ee843",
+          500: "#0cd325",
+          600: "#0aa91e",
+          700: "#078218",
         },
         earth: "#d6c3a0",
         ink: "#0a0f0c",
@@ -23,9 +23,10 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-geist)", "system-ui", "sans-serif"],
         mono: ["var(--font-geist-mono)", "ui-monospace", "monospace"],
+        display: ["var(--font-chakra)", "system-ui", "sans-serif"],
       },
       boxShadow: {
-        glow: "0 0 90px -20px rgba(16,185,129,0.5)",
+        glow: "0 0 90px -20px rgba(12,211,37,0.5)",
         card: "0 10px 40px -20px rgba(0,0,0,0.6)",
       },
       keyframes: {

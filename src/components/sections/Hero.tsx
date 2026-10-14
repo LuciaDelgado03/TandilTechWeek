@@ -11,12 +11,16 @@ export default function Hero() {
       <InteractiveGrid mouse speed={0.14} />
 
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-6 pb-24 pt-12 md:grid-cols-2 md:gap-8 md:pt-16">
-        {/* Piedra movediza con el nombre, anclada a la izquierda */}
-        <h1 className="animate-fadeUp">
+        {/* Piedra movediza + wordmark debajo, anclados a la izquierda */}
+        <h1 className="animate-fadeUp flex flex-col items-center gap-6 md:items-start">
           <Logo
-            variant="full"
-            className="mx-auto h-80 w-auto max-w-full text-white md:h-[30rem] lg:h-[34rem]"
+            className="h-64 w-auto max-w-full text-white sm:h-72 md:h-[23rem] lg:h-[26rem]"
           />
+          <span className="font-display -rotate-2 text-4xl font-bold uppercase leading-none tracking-wide sm:text-5xl md:text-4xl lg:text-[2.75rem]">
+            <span className="bg-gradient-to-r from-brand-400 via-brand-300 to-white bg-clip-text text-transparent drop-shadow-[0_0_24px_rgba(12,211,37,0.45)]">
+              Tandil Tech Week
+            </span>
+          </span>
         </h1>
 
         {/* Texto a la derecha */}

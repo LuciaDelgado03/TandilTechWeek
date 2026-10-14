@@ -16,6 +16,15 @@ const geistMono = localFont({
   display: "swap",
 });
 
+const chakra = localFont({
+  src: [
+    { path: "./fonts/chakra-petch-600.woff2", weight: "600", style: "normal" },
+    { path: "./fonts/chakra-petch-700.woff2", weight: "700", style: "normal" },
+  ],
+  variable: "--font-chakra",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: {
     default: "Tandil Tech Week · Un encuentro para construir lo que viene",
@@ -30,7 +39,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="es" className="dark">
-      <body className={`${geist.variable} ${geistMono.variable} font-sans`}>
+      <body className={`${geist.variable} ${geistMono.variable} ${chakra.variable} font-sans`}>
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />

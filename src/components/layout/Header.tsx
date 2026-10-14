@@ -9,7 +9,6 @@ import { event } from "@/lib/content";
 const navLinks = [
   { href: "/#jornadas", label: "Jornadas" },
   { href: "/#comunidad", label: "Comunidad" },
-  { href: "/#startups", label: "Startups" },
   { href: "/#organizan", label: "Organizan" },
   { href: "/#faq", label: "FAQ" },
   { href: "/eventos-anteriores", label: "Ediciones" },
@@ -22,7 +21,7 @@ export default function Header() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-ink/70 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link href="/" className="flex items-center gap-2.5">
-          <Logo variant="mark" className="h-9 w-auto text-white" />
+          <Logo className="h-9 w-auto text-white" />
           <span className="hidden text-sm font-semibold tracking-wide text-white sm:block">
             {event.name}
           </span>

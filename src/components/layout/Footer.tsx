@@ -40,7 +40,7 @@ export default function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-8 px-6 md:flex-row">
         <div className="flex flex-col items-center gap-2 md:items-start">
           <div className="flex items-center gap-2.5">
-            <Logo variant="mark" className="h-8 w-auto text-white" />
+            <Logo className="h-8 w-auto text-white" />
             <span className="text-sm font-semibold text-white">{event.name}</span>
           </div>
           <p className="font-mono text-xs text-zinc-500">

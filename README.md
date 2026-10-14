@@ -37,7 +37,14 @@ archivo se actualiza todo el sitio (nombre, fechas, jornadas, startups, sponsors
 FAQ, ediciones anteriores).
 
 ⚠️ Los datos marcados como **PLACEHOLDER** son de ejemplo y deben reemplazarse:
-startups, organizadores, sponsors, ediciones anteriores y redes sociales.
+startups y ediciones anteriores. Los organizadores y sponsors son **datos reales**
+tomados de tandiltechweek.com, con logos en `public/logos/`.
+
+## Identidad
+
+- Verde de marca: `#0cd325` (escala `brand` en `tailwind.config.ts`).
+- Logo: silueta de la Piedra Movediza (`src/components/ui/Logo.tsx`), favicon en `src/app/icon.svg`.
+- Tipografía display del wordmark: **Chakra Petch** (600/700, bundlada en `src/app/fonts/`).
 
 ## Estado / próximos pasos
 

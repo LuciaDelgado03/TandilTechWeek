@@ -87,58 +87,63 @@ export const community = {
   ],
 };
 
-// PLACEHOLDER: reemplazar por startups reales
-export const startups = [
-  { name: "Startup Uno", category: "IA", initials: "S1" },
-  { name: "Startup Dos", category: "Fintech", initials: "S2" },
-  { name: "Startup Tres", category: "Agtech", initials: "S3" },
-  { name: "Startup Cuatro", category: "Healthtech", initials: "S4" },
-  { name: "Startup Cinco", category: "DevTools", initials: "S5" },
-  { name: "Startup Seis", category: "EduTech", initials: "S6" },
-  { name: "Startup Siete", category: "Gaming", initials: "S7" },
-  { name: "Startup Ocho", category: "SaaS", initials: "S8" },
-];
-
-// PLACEHOLDER: reemplazar por organizadores reales
+// Datos reales tomados de tandiltechweek.com
 export const organizers = [
   {
-    name: "Organizador A",
-    url: "#",
-    role: "Comunidad",
-    description: "Organización sin fines de lucro que nuclea a la comunidad tecnológica local.",
+    name: "Picante",
+    url: "https://picante.fund",
+    tag: "Venture Capital",
+    description:
+      "Acompañan desde el principio a la nueva generación de founders latinoamericanos: AI Natives construyendo productos globales. Confían cuando nadie más confía.",
+    logo: "/logos/picante.png",
+  },
+  {
+    name: "Relaw",
+    url: "https://relaw.io",
+    tag: "Venture Legal",
+    description:
+      "El partner legal de startups y empresas de tecnología. Expertise legal y visión de negocio, con acompañamiento 360° para crecer en múltiples mercados.",
+    logo: "/logos/relaw.jpg",
+  },
+  {
+    name: "Paisanos",
+    url: "https://paisanos.io",
+    tag: "Product & Tech",
+    description:
+      "Estudio global de diseño y desarrollo de productos digitales, acompañando a startups y corporates a crear soluciones que escalan.",
+    logo: "/logos/paisanos.png",
+  },
+  {
+    name: "HackTandil",
+    url: "https://hacktandil.org",
     tag: "Community",
+    description:
+      "Comunidad tecnológica de Tandil que conecta desarrolladores, estudiantes, emprendedores y entusiastas a través de meetups, hackathons y eventos.",
+    logo: "/logos/hacktandil.png",
   },
   {
-    name: "Organizador B",
-    url: "#",
-    role: "Universidad",
-    description: "Facultad con formación en ingeniería y ciencias de la computación.",
-    tag: "Educación",
+    name: "Geonosis",
+    url: "https://geonosisgroup.com",
+    tag: "Tech Partner",
+    description:
+      "El brazo tecnológico de startups y empresas, que las acompaña desde la idea hasta el scale-up. Liderazgo técnico, pensamiento de producto y visión de negocio para construir soluciones digitales reales.",
+    logo: "/logos/geonosisgroup.png",
   },
   {
-    name: "Organizador C",
-    url: "#",
-    role: "Product Studio",
-    description: "Estudio de diseño y desarrollo de productos digitales.",
-    tag: "Producto",
-  },
-  {
-    name: "Organizador D",
-    url: "#",
-    role: "Tech Company",
-    description: "Empresa tecnológica regional con foco en software y talento.",
-    tag: "Industria",
+    name: "Fardo",
+    url: "https://heyfardo.com",
+    tag: "AI Visibility",
+    description:
+      "La primera plataforma de brand intelligence de Latam. Miden cómo aparece tu marca en ChatGPT, Gemini, Perplexity y Claude, y arman el plan para que la IA te cite y te recomiende.",
+    logo: "/logos/heyfardo.png",
   },
 ];
 
-// PLACEHOLDER: reemplazar por sponsors reales
+// Datos reales tomados de tandiltechweek.com
 export const sponsors = [
-  "Sponsor Uno",
-  "Sponsor Dos",
-  "Sponsor Tres",
-  "Sponsor Cuatro",
-  "Sponsor Cinco",
-  "Sponsor Seis",
+  { name: "Grupo Rotonda", url: "https://gruporotonda.com.ar", logo: "/logos/gruporotonda.png" },
+  { name: "The Red Guild", url: "https://theredguild.org", logo: "/logos/theredguild.png" },
+  { name: "Payoneer", url: "https://www.payoneer.com", logo: "/logos/payoneer.png" },
 ];
 
 export type PastEvent = {
