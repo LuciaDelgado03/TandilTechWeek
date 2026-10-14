@@ -14,7 +14,7 @@ export default function InscripcionPage() {
       <PageHeader
         eyebrow={`Inscripciones ${event.year}`}
         title="Reservá tu lugar"
-        description={`${event.dates} de ${event.hours} · Inscripción gratuita con cupos limitados.`}
+        description={`${event.hours} · Inscripción gratuita con cupos limitados.`}
       />
       <div className="px-6 pb-24">
         <RegisterForm />

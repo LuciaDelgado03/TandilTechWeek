@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "@/components/ui/Logo";
 import { event } from "@/lib/content";
 
 function InstagramIcon() {
@@ -39,13 +40,11 @@ export default function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-8 px-6 md:flex-row">
         <div className="flex flex-col items-center gap-2 md:items-start">
           <div className="flex items-center gap-2.5">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-500 font-mono text-xs font-bold text-ink">
-              {event.shortName}
-            </span>
+            <Logo variant="mark" className="h-8 w-auto text-white" />
             <span className="text-sm font-semibold text-white">{event.name}</span>
           </div>
           <p className="font-mono text-xs text-zinc-500">
-            {event.dates} {event.year} · {event.city}
+            Edición {event.year} · {event.city}
           </p>
         </div>
 

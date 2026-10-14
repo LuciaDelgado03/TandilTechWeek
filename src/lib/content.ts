@@ -23,7 +23,6 @@ export const stats = [
   { value: "2", label: "jornadas" },
   { value: "10+", label: "charlas y actividades" },
   { value: "300+", label: "asistentes esperados" },
-  { value: "1", label: "comunidad que crece" },
 ];
 
 export type EventDay = {

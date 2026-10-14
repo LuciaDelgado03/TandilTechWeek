@@ -6,6 +6,8 @@ type SectionProps = {
   title?: string;
   description?: string;
   className?: string;
+  /** Fondo decorativo opcional (se renderiza detrás del contenido). */
+  background?: ReactNode;
   children: ReactNode;
 };
 
@@ -15,11 +17,13 @@ export default function Section({
   title,
   description,
   className = "",
+  background,
   children,
 }: SectionProps) {
   return (
     <section id={id} className={`relative py-20 sm:py-28 ${className}`}>
-      <div className="mx-auto max-w-6xl px-6">
+      {background}
+      <div className="relative mx-auto max-w-6xl px-6">
         {(eyebrow || title || description) && (
           <div className="mb-12 max-w-2xl">
             {eyebrow && (

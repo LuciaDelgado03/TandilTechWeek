@@ -1,10 +1,15 @@
 import Section from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
+import InteractiveGrid from "@/components/ui/InteractiveGrid";
 import { event } from "@/lib/content";
 
 export default function RegisterCta() {
   return (
-    <Section id="inscripcion" className="border-t border-white/5">
+    <Section
+      id="inscripcion"
+      className="border-t border-white/5"
+      background={<InteractiveGrid speed={0.08} />}
+    >
       <div className="mx-auto max-w-3xl text-center">
         <p className="mb-3 font-mono text-xs uppercase tracking-[0.25em] text-brand-400">
           Inscripciones {event.year}
@@ -22,7 +27,7 @@ export default function RegisterCta() {
           </Button>
         </div>
         <p className="mt-8 font-mono text-xs text-zinc-500">
-          {event.dates} · {event.hours} · {event.city}
+          {event.hours} · {event.city} · Entrada gratuita
         </p>
       </div>
     </Section>

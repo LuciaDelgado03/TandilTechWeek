@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Button from "@/components/ui/Button";
+import Logo from "@/components/ui/Logo";
 import { event } from "@/lib/content";
 
 const navLinks = [
@@ -21,9 +22,7 @@ export default function Header() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-ink/70 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link href="/" className="flex items-center gap-2.5">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-500 font-mono text-xs font-bold text-ink">
-            {event.shortName}
-          </span>
+          <Logo variant="mark" className="h-9 w-auto text-white" />
           <span className="hidden text-sm font-semibold tracking-wide text-white sm:block">
             {event.name}
           </span>
